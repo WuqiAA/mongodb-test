@@ -32,36 +32,6 @@ public class MyMongoDB {
 //        url = "mongodb://127.0.0.1:27017";
 //        dbName = "majiang";
 
-        //三湘
-//        url = "mongodb://sanxiang_mj_user:sanxiangmima@dds-bp1c1c1a0a65ae641462-pub.mongodb.rds.aliyuncs.com:3717/mj_sanxiang";
-//        dbName = "mj_sanxiang";
-
-        //安庆
-//        url = "mongodb://niumowang_mj_user:niumowangmima@dds-bp1c1c1a0a65ae641462-pub.mongodb.rds.aliyuncs.com:3717/mj_niumowang";
-//        dbName = "mj_niumowang";
-
-        //内蒙
-//        url = "mongodb://nmg_mj_user:nmgpwd@dds-bp1c1c1a0a65ae641462-pub.mongodb.rds.aliyuncs.com:3717/mj_nmg";
-//        dbName = "mj_nmg";
-
-//        鄂东
-/*        url = "mongodb://qile_mj_user:4Uah2XLC4u7nG6oYOaSK@dds-bp1c1c1a0a65ae641462-pub.mongodb.rds.aliyuncs.com:3717/mj_qile";
-//        4Uah2XLC4u7nG6oYOaSK@dds-bp1b87d8c3c39fb42.mongodb.rds.aliyuncs.com:3717
-        dbName = "mj_qile";*/
-
-        //江苏
-//        url = "mongodb://changzhou_mj_user:4Uah2XLC4u7nG6oYOaSK@dds-bp1c1c1a0a65ae641462dds-bp1c1c1a0a65ae642.mongodb.rds.aliyuncs.com:3717.mongodb.rds.aliyuncs.com:3717/mj_changzhou";
-//        dbName = "mj_changzhou";
-
-        //福建游:
-//        url = "mongodb://fujianyou_mj_user:aa9a9cc953th5shd1ml2tgzgmq@dds-bp1c1c1a0a65ae641462-pub.mongodb.rds.aliyuncs.com:3717/mj_fujianyou";
-////                                                                     @dds-bp1c1c1a0a65ae642.mongodb.rds.aliyuncs.com:3717/mj_fujianyou
-//        dbName = "mj_fujianyou";
-
-        //贝贝福建:
-        url = "mongodb://fujian_mj_user:fujianmima@dds-bp1c1c1a0a65ae641462-pub.mongodb.rds.aliyuncs.com:3717/mj_fujian";
-        dbName = "mj_fujian";
-
         return getDB(url, dbName);
     }
 
