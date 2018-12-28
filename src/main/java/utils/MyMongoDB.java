@@ -17,6 +17,7 @@ public class MyMongoDB {
     public static DBCollection mjClubsCollection = mjDb.getCollection(getMjClubsCollection());
     public static DBCollection mjClubWanFaCollection = mjDb.getCollection(getMjClubWanFaCollection());
     public static DBCollection mjPlayersCollection = mjDb.getCollection(getMjPlayersCollection());
+    public static DBCollection mjConsoleSellHistory = mjDb.getCollection(mjConsoleSellHistoryCollection());
 
     /**
      * 获得数据库
@@ -55,6 +56,10 @@ public class MyMongoDB {
 
     private static String getMjClubWanFaCollection() {
         return "mj_club_wanfa";
+    }
+
+    private static String mjConsoleSellHistoryCollection() {
+        return "mj_console_sell_history";
     }
 
     public static DB getDB(String url, String dbName) {

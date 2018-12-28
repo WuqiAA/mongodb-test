@@ -18,5 +18,6 @@ public class Main {
         System.out.println("新增用户："+MongoDbUtils.staticNewPlayerCount(1545580800, 1545667200));
         System.out.println("活跃用户："+MongoDbUtils.staticActivePlayerCnt(1545580800, 1545667200));
         System.out.println("最高在线："+MongoDbUtils.staticMaxOnlineCount(1545580800, 1545667200));
+        System.out.println("交易卡数："+MongoDbUtils.getAgentSellCardsCount(1543593600));
     }
 }

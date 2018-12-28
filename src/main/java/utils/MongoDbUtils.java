@@ -422,4 +422,24 @@ public class MongoDbUtils {
         }
         return list.size();
     }
+
+    public static int getAgentSellCardsCount(long begin) {
+        DBObject dbObject = new BasicDBObject();
+        dbObject.put("$gte", begin);
+//        dbObject.put("$lt", end);
+
+        DBObject query = new BasicDBObject();
+        query.put("seller_id", 2);
+        query.put("create_time", dbObject);
+        DBCursor mjRooms = MyMongoDB.mjConsoleSellHistory.find(query);
+//        ArrayList<Integer> list = new ArrayList<Integer>();
+//        System.out.println(mjRooms.size());
+        int count = 0;
+        for (DBObject mjRoom : mjRooms) {
+            int cards = (Integer)mjRoom.get("numof_cards_2");
+            count += cards;
+
+        }
+        return count;
+    }
 }
