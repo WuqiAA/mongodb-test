@@ -32,7 +32,7 @@ public class MyMongoDB {
         //本地
 //        url = "mongodb://127.0.0.1:27017";
 //        dbName = "majiang";
-
+//        url = "";
 
 
         return getDB(url, dbName);
